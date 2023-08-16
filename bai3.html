@@ -51,6 +51,17 @@
     //     console.log(`Tổng cột ${i} là ${sumCol} `);
     // }
 
+    for (let i = 0; i < arr.length; i++) { //0
+        let maxCol = 0;
+        for (let j = 0; j < arr.length; j++) {//j = 1;i = 0
+            if(arr[j][i] > maxCol){
+                maxCol = arr[j][i];//00 10 20
+            }
+        }
+        console.log(`Max cột ${i} là ${maxCol} `);
+    }
+
+
     //Bài 8 (Nâng cao): Tìm max đường chéo chính của ma trận trên
     // let tongCheo = 0;
     // for (let i = 0; i < arr.length; i++) {
@@ -59,11 +70,11 @@
     // alert(tongCheo);
 
     //Bài 9 (Nâng cao): Tìm max, min đường chéo phụ của ma trận trên"
-let cheoPhu = 0;
-    for (let i = 0; i < arr.length; i++) {
-        cheoPhu = cheoPhu + arr[i][arr.length - 1 -i]; //[0][2] [1][1]
-    }
-    alert(cheoPhug)
+// let cheoPhu = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         cheoPhu = cheoPhu + arr[i][arr.length - 1 -i]; //[0][2] [1][1]
+//     }
+//     alert(cheoPhu);
 
 </script>
 </body>
