@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    //    let a = [
+    //        [1, 2, 1, 24],
+    //        [8, 11, 9, 4],
+    //        [7, 0, 7, 27],
+    //        [7, 4, 28, 14],
+    //        [3, 10, 26, 7]
+    //    ];
+    //bài 1: Viết chương trình khởi tạo mảng 2 chiều, gồm một bộ các phần tử có sẵn,  in ra các phần tử trong mảng.
+    // for (let i = 0; i < a.length; i++) {
+    //     console.log(`row ${i}`)
+    //     for (let j = 0; j < a[i].length; j++) {
+    //         console.log(" " + a[i][j])
+    //     }
+    // }
+
+    //Bài 2: Viết một chương trình để in các ký tự trong một mảng theo thứ tự đảo ngược.
+    // for (let i = 0; i < a.length; i++) {
+    //     a[i] = a[i].reverse();
+    //
+    // }
+    // a = a.reverse();
+    // console.log(a)
+
+    //Bài 3: Viết một chương trình khai báo một mảng ký tự và kích thước của mảng.
+
+    // let str  = [`5`,`-`,`k`,`_`,`20`,`10`,`9`];
+    // let count = 0;
+    // for (let i = 0; i < str.length; i++) {
+    //     if (isNaN(str[i]) === false) {
+    //         count++
+    //     }
+    // }
+    // console.log(`Số kí tự số là ${count} `)
+
+    //Bài 4: Viết một chương trình để đếm số từ trong một chuỗi
+    // let string =prompt("Nhập từ: ");
+    // let countWord = string.split(" ");
+    // let count = 0;
+    // for (let i = 0; i < countWord.length; i++) {
+    // if (countWord[i] !== " "){
+    //     count++;
+    // }
+    // }
+    // alert(` Số từ trong chuỗi là: ${countWord}`);
+
+    //Bài 5: Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không.
+    // let chuoi = `Thắng`;
+    // let chuoi1 = `Uyên `;
+    // if (chuoi.length !== chuoi1.length) {
+    //     alert(`Khác nhau`)
+    // } else {
+    //     let check = false;
+    //     for (let i = 0; i < chuoi.length; i++) {
+    //         if (chuoi[i] !== chuoi1[i]) {
+    //             check = true;
+    //             break;
+    //         }
+    //     }
+    //     if (check === true) {
+    //         alert("Khác nhau");
+    //     } else {
+    //         alert("Giống nhau");
+    //     }
+    // }
+
+    //Bài 6: Viết chương trình nhập vào một mảng ký tự, tìm tất cả các ký tự trong mảng là (-) và thay thế các ký tự này bởi ký tự ( _ )
+
+    // let arr = [`Thắng`, `-`, `đẹp`,`-`, `trai`, `-`, `mãi`, `-`, `yêu`];
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (arr[i] === `-`) {
+    //         arr[i] = `_`;
+    //
+    //     }
+    //
+    // }
+    // console.log(arr);
+
+    let str = `Thắng-đẹp-trai-mãi-yêu`;
+    let arr = str.split(``); //Biến chuỗi thành mảng
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === `-`) {
+            arr.splice(i, 1, `_`);
+        }
+    }
+    str = arr.join(``);
+    alert(str);
+</script>
+</body>
+</html>

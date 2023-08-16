@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng 2 chiều </title>
+</head>
+<body>
+<script>
+    let arr = [
+        [1, 3, 4],
+        [3, 4, 5],
+        [5, 5, 6]
+    ];
+   // Bài 1: Tính tổng các phần tử mảng 2 chiều.
+// let Sum = [0][0];
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = 0; j < arr[i].length; j++) {
+//             Sum += arr[i][j];
+//
+//         }
+//     }
+//     console.log(Sum);
+    // Bài 2: In ra tổng các phần tử của từng hàng.
+
+    //     for (let i = 0; i < arr.length; i++) {
+    //         Sum = [0][0];
+    //         for (let j = 0; j < arr[i].length; j++) {
+    //             Sum += arr[i][j];
+    //         }
+    // console.log(`Tổng các phần tử trong hàng ${i} là ${Sum}`);
+    // }
+    //Bài 3: Tìm phần tử lớn nhất trong các hàng.
+
+     // for (let i = 0; i < arr.length; i++) {
+     //     max = arr [i][0];
+     //     for (let j = 0; j < arr[i].length; j++) {
+     //         if (arr[i][j] > max){
+     //             max = arr[i][j];
+     //         }
+     //     }
+     //     console.log(`Max của hàng ${i} la: ${max} `)
+     // }
+
+    //Bài 6 (Nâng cao): Hiển thị tổng các phần tử của từng cột.
+    // 00 10 20 | 01 11 21
+    // for (let i = 0; i < arr.length; i++) { //0
+    //     let sumCol = 0;
+    //     for (let j = 0; j < arr.length; j++) {//j = 1;i = 0
+    //         sumCol = sumCol + arr[j][i];//00 10 20
+    //     }
+    //     console.log(`Tổng cột ${i} là ${sumCol} `);
+    // }
+
+    //Bài 8 (Nâng cao): Tìm max đường chéo chính của ma trận trên
+    // let tongCheo = 0;
+    // for (let i = 0; i < arr.length; i++) {
+    //     tongCheo = tongCheo + arr[i][i];
+    // }
+    // alert(tongCheo);
+
+    //Bài 9 (Nâng cao): Tìm max, min đường chéo phụ của ma trận trên"
+let cheoPhu = 0;
+    for (let i = 0; i < arr.length; i++) {
+        cheoPhu = cheoPhu + arr[i][arr.length - 1 -i]; //[0][2] [1][1]
+    }
+    alert(cheoPhug)
+
+</script>
+</body>
+</html>
